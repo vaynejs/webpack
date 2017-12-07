@@ -5,3 +5,4 @@
 {{#unit}}
 /test/unit/coverage/
 {{/unit}}
+package.back.json
