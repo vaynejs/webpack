@@ -1,29 +1,26 @@
 {
-  "name": "{{ name }}",
+  "name": "dev",
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
   "scripts": {
     "dev": "vayne server",
-    {{#lint}}
+    "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}",
-    {{/lint}}
     "build": "vayne build"
   },
   "dependencies": {
-    "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    {{#lint}}
-    "eslint-config-vayne": "^0.0.3",
-    {{/lint}}
-    "vue-template-compiler": "^2.5.2",
     "babel-preset-vayne": "^1.0.2",
+    "eslint-config-vayne": "^0.0.3",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "vayne-plugin-vue": "^1.0.3"
+    "vayne-plugin-vue": "^1.0.3",
+    "vue-template-compiler": "^2.5.2"
   },
   "engines": {
     "node": ">= 4.0.0",
