@@ -19,6 +19,7 @@
     {{#lint}}
     "eslint-config-vayne": "^0.0.3",
     {{/lint}}
+    "autoprefixer": "^7.1.2",
     "vue-template-compiler": "^2.5.2",
     "babel-preset-vayne": "^1.0.2",
     "vayne-plugin-vue": "^1.0.3"
